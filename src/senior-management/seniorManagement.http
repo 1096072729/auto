@@ -1,0 +1,57 @@
+### 创建一个user对象
+### signup
+POST http://localhost:3000/admin/signup
+Content-Type: application/json
+
+{
+    "account":"asdt",
+    "password":"fidnfi"
+}
+
+### signin
+POST  http://localhost:3000/admin/signin
+Content-Type: application/json
+
+{
+    "account":"asdt",
+    "password":"fidnfi"
+}
+
+### Get the currently signed
+GET http://localhost:3000/admin/whoAmI
+
+### signout 注销用户
+POST http://localhost:3000/admin/signout
+
+### 按照id查找一个user信息
+GET http://localhost:3000/admin/14
+
+### 返回用户所有信息
+GET http://localhost:3000/admin/findAll
+
+### 查找指定的user
+GET http://localhost:3000/admin?account=asd
+
+### 删除一个user用户
+DELETE http://localhost:3000/admin/13
+
+### 修改senior
+PATCH http://localhost:3000/admin/senior/1
+Content-Type: application/json
+
+{
+    "forbidden":false
+}
+
+### 删除全部用户
+DELETE http://localhost:3000/admin/deleteAll
+
+### search
+POST http://localhost:3000/admin/search
+Content-Type: application/json
+
+{
+    "account":"jack",
+    "roles":"普通管理员",
+    "forbidden":false
+}

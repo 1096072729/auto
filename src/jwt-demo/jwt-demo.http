@@ -1,0 +1,18 @@
+### jwt 
+### 
+POST http://localhost:3000/jwt/tokenIn
+Content-Type: application/json
+
+{
+    "account":"22",
+    "password":"22"
+}
+
+### 
+POST http://localhost:3000/jwt/getToken
+Content-Type: application/json
+
+{
+    "account":"22",
+    "password":"22"
+}

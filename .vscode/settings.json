@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "120.55.54.248",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "auto-sales",
+            "database": "auto-sales",
+            "username": "ubuntu",
+            "password": "123456"
+        }
+    ]
+}

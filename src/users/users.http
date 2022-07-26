@@ -1,0 +1,74 @@
+### 创建一个user对象
+### createUser
+POST http://localhost:3000/auth/signup?role=user
+Content-Type: application/json
+
+{
+    "account":"22",
+    "password":"22"
+}
+
+### signin
+POST  http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "account":"asdt",
+    "password":"fidnfi"
+}
+
+### search
+POST http://localhost:3000/auth/search
+Content-Type: application/json
+
+{
+    "account":"peter",
+    "grade":"钻石会员",
+    "telephone":"18885614616",
+    "forbidden":true,
+    "sex":"女"
+}
+
+#  "account":"asd"
+#  "name":"大神",
+#  "telephone":"18885614616",
+#  "sex":"女",
+#  "forbidden":false,
+#  "grade":"普通会员"
+
+### Get the currently signed
+GET http://localhost:3000/auth/whoAmI
+
+### signout 注销用户
+POST http://localhost:3000/auth/signout
+
+### 按照id查找一个user信息
+GET http://localhost:3000/auth/14
+
+### 返回用户所有信息
+GET http://localhost:3000/auth/findAll
+
+### 查找指定的user
+GET http://localhost:3000/auth?account=asd
+
+### 删除一个user用户
+DELETE http://localhost:3000/auth/13
+
+### 修改user
+PATCH http://localhost:3000/auth/1?role=user
+Content-Type: application/json
+
+{
+    "forbidden":false
+}
+
+### 删除全部用户
+DELETE http://localhost:3000/auth/deleteAll
+
+### 删除部分用户
+DELETE http://localhost:3000/auth/deletePart
+Content-Type: application/json
+
+{
+    "userIds":[5,6]
+}

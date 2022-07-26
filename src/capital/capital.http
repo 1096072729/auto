@@ -1,0 +1,41 @@
+### capital 的请求接口
+### create
+###
+POST http://localhost:3000/capital/create
+Content-Type: application/json
+
+{
+    "account":"asd"
+}
+
+
+### findAll
+GET http://localhost:3000/capital/findAll
+
+### findByAccouont
+GET http://localhost:3000/capital/account/asd
+
+### findOne
+GET http://localhost:3000/capital/1b6f4c97-ad2d-4720-9aec-cc98caf69135
+
+### deletecapitalOfId
+DELETE http://localhost:3000/capital/ee30f6fc-16e6-4ea0-a117-231183f935a3
+
+### deleteAll
+DELETE http://localhost:3000/capital/deleteAll
+
+### update
+PATCH http://localhost:3000/capital/75285e59-970c-4b1f-b16d-1e62710c7ad4
+Content-Type: application/json
+
+{
+    "alipay":"10086",
+    "balance":85.98,
+    "recharge":56.3,
+    "income":99.96,
+    "pay":478.26,
+    "withdrawal":63.53,
+    "consumptionAmount":256.023,
+    "freezingOfFunds":6524.023,
+    "funSecurityLevel":98
+}

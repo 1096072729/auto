@@ -1,0 +1,27 @@
+POST http://localhost:3000/star/create
+Content-Type: application/json
+
+{
+    "userId":1,
+    "goodsId":3,
+    "starPrice":9.9
+}
+
+
+### findAll
+GET http://localhost:3000/star/findAll
+
+
+### findOne
+GET http://localhost:3000/star/
+
+###getByUserId
+GET http://localhost:3000/star/user/1
+
+### deleteAll
+DELETE http://localhost:3000/star/deleteAll
+
+### deleteOne
+DELETE http://localhost:3000/star/9fd8ad15a0fc4294
+
+###

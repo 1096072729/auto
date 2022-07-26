@@ -1,0 +1,33 @@
+### linkEncrypt
+###
+POST http://localhost:3000/linkEncrypt/create
+Content-Type: application/json
+
+{
+    "account":"000",
+    "secretKey":"asdf"
+}
+
+### findAll
+GET http://localhost:3000/linkEncrypt/findAll
+
+### findByAccount
+GET http://localhost:3000/linkEncrypt/account?account=000
+
+### findOne
+GET http://localhost:3000/linkEncrypt/2
+
+### deleteAll
+DELETE http://localhost:3000/linkEncrypt/deleteAll
+
+### deleteOne
+DELETE http://localhost:3000/linkEncrypt/8
+
+### update
+PATCH http://localhost:3000/linkEncrypt/2
+Content-Type: application/json
+
+{
+    "account":"000",
+    "secretKey":"asdffd"
+}

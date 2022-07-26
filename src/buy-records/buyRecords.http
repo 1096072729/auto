@@ -1,0 +1,36 @@
+### buyRecords
+###
+POST http://localhost:3000/buyRecords/create
+Content-Type: application/json
+
+{
+    "userId":1,
+    "goodsId":3,
+    "buyPrice":9.9
+}
+
+### findAll
+GET http://localhost:3000/buyRecords/findAll
+
+### total
+GET http://localhost:3000/buyRecords/total
+
+### findOne
+GET http://localhost:3000/buyRecords/b12eb33381e644c5
+
+### deleteAll
+DELETE http://localhost:3000/buyRecords/deleteAll
+
+### deleteOne
+DELETE http://localhost:3000/buyRecords/9fd8ad15a0fc4294
+
+### update
+PATCH http://localhost:3000/buyRecords/9fd8ad15a0fc4294
+Content-Type: application/json
+
+{
+    "orderId":"6fd8ad15a0fc4294",
+    "userId":1,
+    "goodsId":2,
+    "buyPrice":99.9
+}

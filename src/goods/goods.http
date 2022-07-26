@@ -1,0 +1,59 @@
+### goods 的请求接口
+### createGoods
+###
+POST http://localhost:3000/goods/create
+Content-Type: application/json
+
+{
+    "goodsTitle":"黑客大侠",
+    "goodsPic":"http://www.dfda.com",
+    "goodsDes":"我正在描述我的产品",
+    "comment":"七天无理由退款",
+    "encryptedLink":"https://dfa.com/dfad",
+    "category":"虚拟产品",
+    "residue":1000,
+    "originalPrice":9.9,
+    "currentPrice":6.9,
+    "userAccount":"yuiojioj"
+}
+
+
+### findAll
+GET http://localhost:3000/goods/findAll
+
+### findOne
+GET http://localhost:3000/goods/1
+
+### deleteGoodsOfId
+DELETE http://localhost:3000/goods/2
+
+### deleteAll
+DELETE http://localhost:3000/goods/deleteAll
+
+### updateGoods
+PATCH http://localhost:3000/goods/7
+Content-Type: application/json
+
+{
+    "goodsTitle":"小熊猫"
+}
+
+### 
+PATCH  http://localhost:3000/goods/1
+Content-Type: application/json
+
+{
+    "goodsTitle":"熊猫"
+}
+
+### 
+GET http://localhost:3000/goods
+
+
+###
+POST http://localhost:3000/goods/paging/10
+Content-Type: application/json
+
+{
+    "searchValue":"游戏"
+}
